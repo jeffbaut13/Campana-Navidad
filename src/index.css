@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainColorText: #e2d599;
+}
+
+@font-face {
+  font-family: "Amentti";
+  src: url("fonts/Amenti-Regular.ttf");
+}
+@font-face {
+  font-family: "AmenttiBold";
+  src: url("fonts/Amenti-Bold.ttf");
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url("fonts/MyriadPro-regular.otf");
+}
+
+@font-face {
+  font-family: "Tusker";
+  src: url("fonts/tusker-grotesk-bold.ttf");
+}
+.Tusker {
+  font-family: "Tusker";
+  font-weight: 900;
+}
+.Amentti {
+  font-family: "Amentti";
+}
+.AmenttiBold {
+  font-family: "Amentti";
+  font-weight: 600;
+}
+.MyriadPro {
+  font-family: "MyriadPro";
+  font-weight: 500;
+}
+
+html,
+body,
+canvas,
+#root {
+  @apply w-full h-full m-0 p-0 box-content;
+}
+h1 {
+  @apply Tusker text-[--mainColorText] text-center text-6xl  leading-[1.1];
+}
+h2 {
+  @apply AmenttiBold my-12 uppercase text-lg tracking-[14px];
+}
+p {
+  @apply colorTextoClaro tracking-[7px] uppercase;
+}
+.nav li {
+  @apply text-white hover:text-[--mainColorText] tracking-[7px] text-[0.7rem] text-center uppercase;
+}
+.nav li.active {
+  @apply text-[--mainColorText];
+}
+.line {
+  @apply relative pr-12 ml-12;
+}
+.line:after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
+  border-right-width: 1px;
+  border-color: var(--mainColorText);
+}
+img {
+  @apply w-full h-full object-cover;
+}
+.colorTextoClaro {
+  color: var(--mainColorText);
+}
+svg {
+  stroke: white;
+  fill: white;
+}
+.close {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1px;
+  stroke: var(--mainColorText) !important;
+  @apply text-white z-50 w-[20px] h-[20px] cursor-pointer absolute right-0 top-[-60px];
+}
+.imagenEfecto {
+  @apply w-full h-full text-white max-w-2xl flex flex-col items-start justify-center;
+}
+
+.flexCenterR {
+  @apply flex items-center justify-center;
+}
+.flexCenterC {
+  @apply flex flex-col items-center justify-center;
+}
+/* Estilos CSS */
+
+.efectoPunto {
+  cursor: pointer;
+  @apply transition-all duration-300 ease-in z-10 translate-x-[-5px] flex justify-center items-center w-[10px] h-[10px] hover:scale-150  rounded-full;
+}
+.efectoPunto.active {
+  @apply bg-[--mainColorText] scale-[2];
+}
+
+.efectoPunto::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background-color: rgb(255, 252, 208);
+  animation: anchura 2s ease-in-out infinite;
+}
+@keyframes anchura {
+  from {
+    width: 10px;
+    height: 10px;
+    opacity: 0.3;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+  }
+}
+.blurs {
+  background: #00000042;
+  backdrop-filter: blur(34px);
+}
+.blur {
+  background-color: rgba(0, 0, 0, 0.514);
+  backdrop-filter: blur(30px);
+}
+.salirBlur {
+  transition: all 3s ease-out;
+  animation: salir 3s ease-out;
+  pointer-events: none;
+}
+.borderWhite {
+  @apply border border-white border-opacity-40;
+}
+.borderBtn {
+  @apply border border-[--mainColorText] py-2 px-8;
+}
+.custonBtn {
+  @apply transition hover:bg-[--mainColorText] text-white borderBtn hover:text-black;
+}
+.subtitle {
+  @apply Amentti block w-full my-4 uppercase;
+}
+.transition {
+  @apply transition-all ease-in duration-300;
+}
+.gradienteTransparente {
+  @apply bg-gradient-to-r from-transparent to-black;
+}
+@keyframes salir {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes entrar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/************ESTILOS CHRIS */
+
+.comercial {
+  @apply w-full h-full bg-[url('./src/assets/imagenes/backvideo.jpg')] bg-top bg-cover flex flex-col justify-between items-center relative;
+}
+
+.gradienteTransparente {
+  @apply bg-gradient-to-b from-transparent to-black;
+}
+.largo {
+  @apply h-[300vh] relative;
+}
+.cajaimagenes {
+  @apply h-[100vh] sticky top-0 left-0;
+}
+.opacity {
+  opacity: 0;
+}
+.largo .cajaimagenes img {
+  max-width: 100%;
+}
+.imagen_1,
+.imagen_2,
+.imagen_3,
+.imagen_4,
+.imagen_5,
+.imagen_6,
+.imagen_7,
+.imagen_8,
+.imagen_9 {
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.imagen_9 {
+  z-index: 1;
+}
+.imagen_8 {
+  z-index: 2;
+}
+.imagen_7 {
+  z-index: 3;
+}
+.imagen_6 {
+  z-index: 4;
+}
+.imagen_5 {
+  z-index: 5;
+}
+.imagen_4 {
+  z-index: 6;
+}
+.imagen_3 {
+  z-index: 7;
+}
+.imagen_2 {
+  z-index: 8;
+}
+.imagen_1 {
+  z-index: 9;
+}
+.bnovena {
+  @apply bg-[url('./src/assets/imagenes/fondonovena.jpg')] bg-center bg-cover z-[70] relative w-full h-full;
+}
+.division {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+  transform: translateY(-50%);
+}

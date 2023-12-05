@@ -1,0 +1,61 @@
+{
+  "actividades": [
+    {
+      "id": 1,
+      "titulo": "Actividad 1",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "concurrencia": "Todos los dias",
+      "imagen": "/imagenes-actividades/imagen1.jpg",
+      "zona": "Interior"
+    },
+    {
+      "id": 2,
+      "titulo": "Actividad 2",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "concurrencia": "16 de Diciembre",
+      "imagen": "/imagenes-actividades/imagen2.jpg",
+      "zona": "Exterior"
+    },
+
+    {
+      "id": 3,
+      "titulo": "Actividad 3",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "concurrencia": "24 de Diciembre",
+      "imagen": "/imagenes-actividades/imagen3.jpg",
+      "zona": "Exterior"
+    },
+    {
+      "id": 4,
+      "titulo": "Actividad 4",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "concurrencia": "Todos los dias",
+      "imagen": "/imagenes-actividades/imagen4.jpg",
+      "zona": "Interior"
+    },
+    {
+      "id": 5,
+      "titulo": "Actividad 5",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "concurrencia": "Todos los dias",
+      "imagen": "/imagenes-actividades/imagen5.jpg",
+      "zona": "Interior"
+    },
+    {
+      "id": 6,
+      "titulo": "Actividad 6",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "concurrencia": "Todos los dias",
+      "imagen": "/imagenes-actividades/imagen6.jpg",
+      "zona": "Interior"
+    },
+    {
+      "id": 7,
+      "titulo": "Actividad 7",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "concurrencia": "8 de Diciembre",
+      "imagen": "/imagenes-actividades/imagen7.jpg",
+      "zona": "Exterior"
+    }
+  ]
+}
