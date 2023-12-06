@@ -4,29 +4,32 @@ import BotonRegistro from "./BotonRegistro";
 const Registro = ({ ejecutarVista }) => {
   return (
     <div className="showAgendar galeria opacity-0 w-1/2 h-full flexCenterC ">
-      <h1 className="">
-        DESCUBRE EL ENCANTO DE ENTREGAR ALEGRÍA
+      <h1>
+        Descubre el encanto de entregar
         <br />
-        ESTA NAVIDAD
+        alegría esta navidad
       </h1>
       <h2 className="colorTextoClaro">
         <span className="text-center flexCenterC">
-          ROVANIEMI COBRA VIDA EN <br />
-          NUESTRA CAJA MÁGICA NAVIDEÑA
+          Rovaniemi cobra vida en <br />
+          nuestra caja mágica navideña
           <br />
-          DEL 6 AL 26 DE DICIEMBRE
+          del 6 al 26 de diciembre
         </span>
       </h2>
+      <p className="text-center mb-6">
+        Programa tu visita <br /> a un mundo de maravillas
+      </p>
       <a target="_blank" href="https://maps.app.goo.gl/ZCqWmoPn1gJPNVLi7">
-        <img src="/mapa.svg" alt="" />
+        <img src="/iconos/mapa.svg" alt="" />
       </a>
 
       <h2 className="colorTextoClaro">
         <span className="text-center flexCenterC">
-          ESTAMOS EN LA PLAZOLETA DE LA <br /> CALLE 85 CON CARRERA 15 EN BOGOTÁ
+          Estamos en la plazoleta de la <br /> calle 85 con carrera 15 en Bogotá
         </span>
       </h2>
-      <BotonRegistro ejecutarVista={ejecutarVista} />
+      <BotonRegistro />
     </div>
   );
 };

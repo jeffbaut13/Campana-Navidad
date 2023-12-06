@@ -25,7 +25,7 @@ const LineMesh = ({
 
   useEffect(() => {
     if (showCaja && lineRef.current) {
-      setActive(true);
+      /*  setActive(true); */
       lineRef.current.position.set(
         coordenadas[0],
         coordenadas[1] - (posicionY ? posicionY : 0.7),
@@ -38,12 +38,12 @@ const LineMesh = ({
         ease: "power1.out",
         delay,
       });
-    } else {
+    } /* else {
       setActive(false);
-    }
+    } */
   }, [showCaja]);
 
-  useEffect(() => {
+  /* useEffect(() => {
     if (active && spanRef.current) {
       gsap.to(".efectoPunto", {
         opacity: 1,
@@ -51,7 +51,7 @@ const LineMesh = ({
         delay: delay + 0.5,
       });
     }
-  }, [active]);
+  }, [active]); */
 
   const startPoint = new Float32Array([0, 0, 0]);
   const endPoint = new Float32Array([0, posicionY ? posicionY : 0.7, 0]);
@@ -80,9 +80,7 @@ const LineMesh = ({
                 Event();
                 setActiveClass(true);
               }}
-              className={`${
-                activeClass ? "active" : "bg-white"
-              }  efectoPunto opacity-0`}
+              className={`${activeClass ? "active" : "bg-white"}  efectoPunto`}
             ></span>
           </Html>
         </>

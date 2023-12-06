@@ -23,7 +23,7 @@ export default function Opcion1() {
   useEffect(() => {
     window.onload = function () {
       setTimeout(() => {
-        ejecutarVista();
+        setShowCaja(true);
       }, 1000);
     };
   }, []);
@@ -76,7 +76,7 @@ export default function Opcion1() {
     handleButtonClick(orbitControlsRef, inicio);
   };
   return (
-    <div className="relative w-full h-full">
+    <div id="caja" className="relative w-full h-full">
       <MainHtml
         showCaja={showCaja}
         setOpenImg={setOpenImg}

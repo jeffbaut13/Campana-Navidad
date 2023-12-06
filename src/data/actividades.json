@@ -2,16 +2,16 @@
   "actividades": [
     {
       "id": 1,
-      "titulo": "Actividad 1",
-      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "titulo": "Santa ha puesto su toque mágico en el interior.",
+      "descripcion": "Las diferentes estaciones nos transportan a su casa en Rovaniemi, Finlandia. Pon abajo el nombre de la persona que quieres que viva esta experiencia:",
       "concurrencia": "Todos los dias",
       "imagen": "/imagenes-actividades/imagen1.jpg",
       "zona": "Interior"
     },
     {
       "id": 2,
-      "titulo": "Actividad 2",
-      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "titulo": "Fábrica de regalos",
+      "descripcion": "Los elfos de Santa trabajan con pasión para que todos los niños reciban su regalo en Navidad, allí podrás entregar tu regalo, o comprarlo.",
       "concurrencia": "16 de Diciembre",
       "imagen": "/imagenes-actividades/imagen2.jpg",
       "zona": "Exterior"
@@ -19,31 +19,31 @@
 
     {
       "id": 3,
-      "titulo": "Actividad 3",
-      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "titulo": "Foto con Santa",
+      "descripcion": "Tendrás la oportunidad de tomarte una foto con él, (psst: tenemos accesorios para que los uses y te lleves un recuerdo fantástico).",
       "concurrencia": "24 de Diciembre",
       "imagen": "/imagenes-actividades/imagen3.jpg",
       "zona": "Exterior"
     },
     {
       "id": 4,
-      "titulo": "Actividad 4",
-      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "titulo": "Dulce Navidad",
+      "descripcion": "Cuenta la leyenda que los Elfos de Santa adoran este manjar, que solo se puede disfrutar durante Navidad ¿Te atreves a probar?",
       "concurrencia": "Todos los dias",
       "imagen": "/imagenes-actividades/imagen4.jpg",
       "zona": "Interior"
     },
     {
       "id": 5,
-      "titulo": "Actividad 5",
-      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "titulo": "Entrega un mensaje en Navidad",
+      "descripcion": "Graba un mensaje dirigido a esa personita que está esperando tu donación, o también podrás enviar tus buenos deseos a quien quieras.",
       "concurrencia": "Todos los dias",
       "imagen": "/imagenes-actividades/imagen5.jpg",
       "zona": "Interior"
     },
     {
       "id": 6,
-      "titulo": "Actividad 6",
+      "titulo": "Sé Santa",
       "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "concurrencia": "Todos los dias",
       "imagen": "/imagenes-actividades/imagen6.jpg",
@@ -51,8 +51,8 @@
     },
     {
       "id": 7,
-      "titulo": "Actividad 7",
-      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "titulo": "Las Auroras",
+      "descripcion": "Según los habitantes de Rovaniemi, los colores de las auroras tienen un significado único, el verde que simboliza la vida o el púrpura que representa la sabiduría ancestral.",
       "concurrencia": "8 de Diciembre",
       "imagen": "/imagenes-actividades/imagen7.jpg",
       "zona": "Exterior"

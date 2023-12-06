@@ -18,20 +18,20 @@ export const CarShow = ({ orbitControlsRef, cilindro, camara }) => {
     target: [1, 0, -2],
   };
   useEffect(() => {
-    camara.current.position.x = 2;
-    camara.current.position.y = 1;
-    camara.current.position.z = 1.5;
-    cilindro.current.rotation.y = 2.1;
+    camara.current.position.x = 5;
+    camara.current.position.y = 3;
+    camara.current.position.z = 2;
+    cilindro.current.rotation.y = 2.3;
   }, []);
 
   return (
     <>
       <OrbitControls
-        enableZoom={true}
-        enableRotate={true}
+        enableZoom={false}
+        enableRotate={false}
         enablePan={true}
         ref={orbitControlsRef}
-        target={[0, 0.35, 0]}
+        target={[1, 0, -2]}
         maxPolarAngle={1.45}
       />
 

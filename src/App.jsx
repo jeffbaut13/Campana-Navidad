@@ -10,9 +10,12 @@ import Gallery from "./components/Gallery";
 import Division from "./components/Division";
 
 export default function App() {
+  const isTablet = window.innerWidth <= 1260 && window.innerWidth >= 600;
+  const isMobile = window.innerWidth <= 600;
+
   return (
     <Suspense fallback={null}>
-      <Header />
+      <Header isTablet={isTablet} isMobile={isMobile} />
       <Inicio videoId="2xzfNqVn9zI" />
       <Opcion1 />
       <Division />

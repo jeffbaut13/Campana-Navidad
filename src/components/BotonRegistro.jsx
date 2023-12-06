@@ -1,12 +1,15 @@
 import React from "react";
 import MainButton from "./MainButton";
 
-const BotonRegistro = ({ ejecutarVista }) => {
+const BotonRegistro = () => {
+  const handleClick = () => {
+    window.open("https://entregamagica.com/formulario/r/", "_blank");
+  };
   return (
     <>
       <div className="flexCenterR w-full">
         <MainButton
-          HandleClick={ejecutarVista}
+          HandleClick={handleClick}
           cusClasses={"text-sm"}
           titulo={"REGÍSTRATE"}
         />

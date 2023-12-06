@@ -17,7 +17,7 @@ const Novena = () => {
   };
 
   return (
-    <div className=" bnovena">
+    <div id="novena" className=" bnovena">
       <div className="flex flex-col h-full justify-between text-center">
         <p className=" pt-10">
           Extiende la magia de entregar: Descarga nuestra novena especial y un

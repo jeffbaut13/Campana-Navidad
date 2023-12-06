@@ -1,27 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+  @apply bg-black;
+}
 :root {
   --mainColorText: #e2d599;
 }
 
 @font-face {
   font-family: "Amentti";
-  src: url("fonts/Amenti-Regular.ttf");
+  src: url("/fonts/Amenti-Regular.ttf");
 }
 @font-face {
   font-family: "AmenttiBold";
-  src: url("fonts/Amenti-Bold.ttf");
+  src: url("/fonts/Amenti-Bold.ttf");
 }
 @font-face {
   font-family: "MyriadPro";
-  src: url("fonts/MyriadPro-regular.otf");
+  src: url("/fonts/MyriadPro-regular.otf");
 }
 
 @font-face {
   font-family: "Tusker";
-  src: url("fonts/tusker-grotesk-bold.ttf");
+  src: url("/fonts/tusker-grotesk-bold.ttf");
 }
 .Tusker {
   font-family: "Tusker";
@@ -46,10 +48,10 @@ canvas,
   @apply w-full h-full m-0 p-0 box-content;
 }
 h1 {
-  @apply Tusker text-[--mainColorText] text-center text-6xl  leading-[1.1];
+  @apply uppercase Tusker text-[--mainColorText] text-center text-5xl  leading-[1.1];
 }
 h2 {
-  @apply AmenttiBold my-12 uppercase text-lg tracking-[14px];
+  @apply uppercase AmenttiBold my-6 text-sm tracking-[14px];
 }
 p {
   @apply colorTextoClaro tracking-[7px] uppercase;
@@ -61,7 +63,7 @@ p {
   @apply text-[--mainColorText];
 }
 .line {
-  @apply relative pr-12 ml-12;
+  @apply relative xl:pr-12 xl:ml-12 max-xl:mb-6 cursor-pointer;
 }
 .line:after {
   content: "";
@@ -72,6 +74,7 @@ p {
   top: calc(50% - 10px);
   border-right-width: 1px;
   border-color: var(--mainColorText);
+  @apply max-xl:hidden;
 }
 img {
   @apply w-full h-full object-cover;
@@ -82,6 +85,10 @@ img {
 svg {
   stroke: white;
   fill: white;
+}
+.down {
+  fill: var(--mainColorText) !important;
+  stroke-width: 0px;
 }
 .close {
   fill: none;
@@ -184,7 +191,7 @@ svg {
 /************ESTILOS CHRIS */
 
 .comercial {
-  @apply w-full h-full bg-[url('./src/assets/imagenes/backvideo.jpg')] bg-top bg-cover flex flex-col justify-between items-center relative;
+  @apply w-full h-full bg-[url('/imagenes/backvideo.jpg')] bg-top bg-cover flex flex-col justify-between items-center relative;
 }
 
 .gradienteTransparente {
@@ -244,11 +251,16 @@ svg {
   z-index: 9;
 }
 .bnovena {
-  @apply bg-[url('./src/assets/imagenes/fondonovena.jpg')] bg-center bg-cover z-[70] relative w-full h-full;
+  @apply bg-[url('/imagenes/fondonovena.jpg')] bg-center bg-cover z-[70] relative w-full h-full;
 }
 .division {
-  position: absolute;
   width: 100%;
   z-index: 50;
-  transform: translateY(-50%);
+  position: relative;
+}
+.tableHead {
+  @apply AmenttiBold tracking-[7px] text-xs uppercase flexCenterR bg-[--mainColorText] text-black border border-black py-2 px-3;
+}
+.tbField {
+  @apply AmenttiBold tracking-[7px] text-xs uppercase flexCenterR bg-opacity-0 text-[--mainColorText] border border-[--mainColorText] py-2 px-3;
 }
