@@ -17,9 +17,9 @@ const Registro = ({ ejecutarVista }) => {
           del 6 al 26 de diciembre
         </span>
       </h2>
-      <p className="text-center mb-6">
+      <h2 className="colorTextoClaro text-center m-0 mb-6">
         Programa tu visita <br /> a un mundo de maravillas
-      </p>
+      </h2>
       <a target="_blank" href="https://maps.app.goo.gl/ZCqWmoPn1gJPNVLi7">
         <img src="/iconos/mapa.svg" alt="" />
       </a>

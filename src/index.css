@@ -54,7 +54,7 @@ h2 {
   @apply uppercase AmenttiBold my-6 text-sm tracking-[14px];
 }
 p {
-  @apply colorTextoClaro tracking-[7px] uppercase;
+  @apply AmenttiBold colorTextoClaro tracking-[7px] uppercase;
 }
 .nav li {
   @apply text-white hover:text-[--mainColorText] tracking-[7px] text-[0.7rem] text-center uppercase;

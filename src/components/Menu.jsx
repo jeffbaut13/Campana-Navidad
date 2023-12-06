@@ -15,7 +15,8 @@ const Menu = ({ linesRef }) => {
         onClick={() => handleClick("caja")}
         className="line"
       >
-        Caja
+        La caja <br />
+        magica
       </li>
       <li
         ref={(el) => (linesRef.current[2] = el)}

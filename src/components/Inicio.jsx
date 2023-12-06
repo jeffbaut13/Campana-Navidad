@@ -57,12 +57,12 @@ const Inicio = ({ videoId }) => {
       <div className="w-full">
         <div className="w-full h-[50px] gradienteTransparente"></div>
         <div className="flex-col justify-center text-center text-[#e2d599] bg-black ">
-          <p className="text-[#e2d599] tracking-[7px]">
+          <h2 className="text-[#e2d599] tracking-[7px]">
             Sumergete en la conmovedora historia de David,
             <br />
             donde un simple acto de entrega se transforma en un milagro
             navideño.
-          </p>
+          </h2>
           <span
             onClick={() => handleClick("caja")}
             className=" cursor-pointer inline-block mt-4 w-7 h-7"
