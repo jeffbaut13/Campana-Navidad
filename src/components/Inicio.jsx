@@ -3,13 +3,14 @@ import YouTube from "react-youtube";
 import Figure from "./Figure";
 import { handleClick } from "../config/Anclas";
 
-const Inicio = ({ videoId }) => {
+const Inicio = ({ videoId, isTablet, isMobile }) => {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef();
 
+
   const opts = {
-    height: "600px",
-    width: "1000px",
+    height: !isMobile && !isTablet ? "600px" : "auto",
+    width: !isMobile && !isTablet ? "1000px" : "100%",
     playerVars: {
       autoplay: 1,
     },
@@ -38,17 +39,17 @@ const Inicio = ({ videoId }) => {
   }, []);
 
   return (
-    <div id="inicio" className="comercial ">
+    <div id="inicio" className="comercial">
       <div className="h-1/6 w-full "></div>
       {playing && (
-        <div ref={videoRef} className="absolute top-1/2 translate-y-[-50%]">
+        <div ref={videoRef} className="absolute max-xl:w-11/12 top-1/2 max-xl:left-1/2 max-xl:translate-x-[-50%] translate-y-[-50%]">
           <YouTube videoId={videoId} opts={opts} />
         </div>
       )}
 
       <div className="w-22 h-22">
         <Figure
-          handleClickVideo={handleClickVideo}
+          handleClick={handleClickVideo}
           imgSrc={"/iconovideo.png"}
           customclas={"cursor-pointer"}
         />
@@ -57,8 +58,8 @@ const Inicio = ({ videoId }) => {
       <div className="w-full">
         <div className="w-full h-[50px] gradienteTransparente"></div>
         <div className="flex-col justify-center text-center text-[#e2d599] bg-black ">
-          <h2 className="text-[#e2d599] tracking-[7px]">
-            Sumergete en la conmovedora historia de David,
+          <h2 className="text-[#e2d599] tracking-[7px] m-0 ">
+            Sumérgete en la conmovedora historia de David,
             <br />
             donde un simple acto de entrega se transforma en un milagro
             navideño.

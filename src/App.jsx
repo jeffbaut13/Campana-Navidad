@@ -8,6 +8,8 @@ import Carta from "./components/Carta";
 import Novena from "./components/Novena";
 import Gallery from "./components/Gallery";
 import Division from "./components/Division";
+import ActividadesMobile from "./components/ActividadesMobile";
+import Footer from "./components/Footer";
 
 export default function App() {
   const isTablet = window.innerWidth <= 1260 && window.innerWidth >= 600;
@@ -16,12 +18,13 @@ export default function App() {
   return (
     <Suspense fallback={null}>
       <Header isTablet={isTablet} isMobile={isMobile} />
-      <Inicio videoId="2xzfNqVn9zI" />
-      <Opcion1 />
+      <Inicio videoId="66Log7IODoE" isTablet={isTablet} isMobile={isMobile}/>
+      {isMobile || isTablet ? <ActividadesMobile/> : <Opcion1 />}
       <Division />
       <Carta />
       <Novena />
       <Gallery />
+      <Footer/>
     </Suspense>
   );
 }

@@ -1,16 +1,17 @@
 const Novena = () => {
   const handleDownload = () => {
     // Puedes cambiar 'ruta/al/archivo.pdf' con la ruta correcta de tu archivo PDF.
-    const pdfFilePath = "ruta/al/archivo.pdf";
+    const pdfFilePath = "/imagenes/NOVENA-NAVIDAD.pdf";
 
     // Crea un elemento 'a' (enlace) y configúralo para descargar el archivo.
     const link = document.createElement("a");
     link.href = pdfFilePath;
-    link.download = "nombre_del_archivo.pdf";
+    link.download = "NOVENA-NAVIDAD.pdf";
+    link.rel = "noopener noreferrer"; // Añadir atributo rel
 
     // Simula el clic en el enlace para iniciar la descarga.
     document.body.appendChild(link);
-    link.click();
+    link.dispatchEvent(new MouseEvent('click'));
 
     // Limpia el enlace después de la descarga.
     document.body.removeChild(link);
@@ -18,8 +19,9 @@ const Novena = () => {
 
   return (
     <div id="novena" className=" bnovena">
+        <div className="w-full h-[50px] gradienteTransparente"></div>
       <div className="flex flex-col h-full justify-between text-center">
-        <p className=" pt-10">
+        <p className=" pt-10 mb-6">
           Extiende la magia de entregar: Descarga nuestra novena especial y un
           cuento navideño para compartir el espíritu de entregar en familia
         </p>
@@ -32,7 +34,7 @@ const Novena = () => {
             {/* Agrega el evento onClick para manejar la descarga */}
             <button
               onClick={handleDownload}
-              className="custonBtn tracking-[15px] text-sm"
+              className="custonBtn tracking-[15px] text-sm font-[Amentii]"
             >
               DESCARGA AQUÍ
             </button>

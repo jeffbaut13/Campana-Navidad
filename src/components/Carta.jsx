@@ -84,6 +84,7 @@ const Carta = () => {
 
   return (
     <div id="carta" className="largo relative">
+
       <div className="cajaimagenes">
         <div className="absolute top-28 z-10 left-1/2 translate-x-[-50%] text-center">
           <h3 className=" text-5xl mb-6 Tusker text-[--mainColorText]">
@@ -104,6 +105,8 @@ const Carta = () => {
         <img className="imagen_8" src="/imagenes/mano8.webp" alt="" />
         <img className="imagen_9" src="/imagenes/mano9.webp" alt="" />
       </div>
+      <div className="w-full h-[50px] gradienteTransparente absolute bottom-0"></div>
+
     </div>
   );
 };

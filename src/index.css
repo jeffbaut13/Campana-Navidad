@@ -51,7 +51,7 @@ h1 {
   @apply uppercase Tusker text-[--mainColorText] text-center text-5xl  leading-[1.1];
 }
 h2 {
-  @apply uppercase AmenttiBold my-6 text-sm tracking-[14px];
+  @apply uppercase AmenttiBold my-6 xl:text-sm tracking-[14px] xs:text-[10px];
 }
 p {
   @apply AmenttiBold colorTextoClaro tracking-[7px] uppercase;
@@ -191,11 +191,14 @@ svg {
 /************ESTILOS CHRIS */
 
 .comercial {
-  @apply w-full h-full bg-[url('/imagenes/backvideo.jpg')] bg-top bg-cover flex flex-col justify-between items-center relative;
+  @apply w-full h-full xl:bg-[url('/imagenes/backvideo.jpg')] xs:bg-[url('/imagenes/fondovideomobile.webp')] bg-top bg-cover flex flex-col justify-between items-center relative;
 }
 
 .gradienteTransparente {
   @apply bg-gradient-to-b from-transparent to-black;
+}
+.gradienteArriba{
+  @apply bg-gradient-to-t from-transparent to-black;
 }
 .largo {
   @apply h-[300vh] relative;

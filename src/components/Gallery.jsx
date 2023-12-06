@@ -52,7 +52,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="w-full pt-28 bg-black">
+    <div className="w-full pt-28 bg-black" id="momentos">
       <div className="flex-col text-center">
         <h3 className="font-extrabold font-[tusker] text-5xl my-6 text-[#e2d599] tracking-[1.5px]">
           MOMENTOS DE ENTREGA
@@ -63,7 +63,7 @@ const Gallery = () => {
         </p>
       </div>
 
-      <div className="pb-[50px]">
+{/*       <div className="pb-[50px]">
         <Slider {...settings}>
           {dataGaleria.map((d, index) => (
             <div
@@ -78,7 +78,7 @@ const Gallery = () => {
           ))}
         </Slider>
       </div>
-
+ */}
       {modalOpen && (
         <div
           style={{
