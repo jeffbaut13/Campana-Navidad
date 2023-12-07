@@ -1,7 +1,7 @@
 import React from "react";
 import Figure from "./Figure";
 
-const Division = () => {
+const Division = ({ isTablet, isMobile }) => {
   return (
     <div className="division xs:px-3.5">
       <div className="gradienteTransparente h-[4rem] translate-y-[-4rem]"></div>
@@ -50,59 +50,75 @@ const Division = () => {
               </p>
             </div>
             <div className="flexCenterC w-full ">
-              <div className="grid grid-cols-5 grid-rows-2 mx-auto mt-12 mb-6">
-                <div className="tableHead col-span-1 row-span-1">
-                  Miércoles 6
-                </div>
-                <div className="tableHead col-span-1 row-span-1">Viernes 8</div>
-                <div className="tableHead col-span-1 row-span-1">Jueves 14</div>
-                <div className="tableHead col-span-1 row-span-1">
-                  Viernes 15
-                </div>
-                <div className="tableHead col-span-1 row-span-1">
-                  Domingo 17
-                </div>
-                <div className="tbField col-span-1 row-span-1">
-                  6P.M. y 8P.M.
-                </div>
-                <div className="tbField col-span-1 row-span-1">
-                  6P.M. y 8P.M.
-                </div>
-                <div className="tbField col-span-1 row-span-1">
-                  6P.M. y 8P.M.
-                </div>
-                <div className="tbField col-span-1 row-span-1">
-                  6P.M. y 8P.M.
-                </div>
-                <div className="tbField col-span-1 row-span-1">6P.M</div>
-              </div>
+              {isTablet || isMobile ? (
+                <Figure customclas={"mt-6"} imgSrc={"/imagenes/horarios.jpg"} />
+              ) : (
+                <>
+                  <div className="grid grid-cols-5 grid-rows-2 mx-auto mt-12 mb-6">
+                    <div className="tableHead col-span-1 row-span-1">
+                      Miércoles 6
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Viernes 8
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Jueves 14
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Viernes 15
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Domingo 17
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">
+                      6P.M. y 8P.M.
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">
+                      6P.M. y 8P.M.
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">
+                      6P.M. y 8P.M.
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">
+                      6P.M. y 8P.M.
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">6P.M</div>
+                  </div>
 
-              <div className="grid grid-cols-6 grid-rows-2 mx-auto mt-12 mb-6">
-                <div className="tableHead col-span-1 row-span-1">Lunes 18</div>
-                <div className="tableHead col-span-1 row-span-1">Martes 19</div>
-                <div className="tableHead col-span-1 row-span-1">
-                  Miércoles 20
-                </div>
-                <div className="tableHead col-span-1 row-span-1">Jueves 21</div>
-                <div className="tableHead col-span-1 row-span-1">
-                  Viernes 22
-                </div>
-                <div className="tableHead col-span-1 row-span-1">
-                  Domingo 23
-                </div>
-                <div className="tbField col-span-1 row-span-1">8P.M.</div>
-                <div className="tbField col-span-1 row-span-1">8P.M.</div>
-                <div className="tbField col-span-1 row-span-1">
-                  6P.M. y 8P.M.
-                </div>
-                <div className="tbField col-span-1 row-span-1">
-                  6P.M. y 8P.M.
-                </div>
-                <div className="tbField col-span-1 row-span-1">
-                  6P.M. y 8P.M.
-                </div>
-                <div className="tbField col-span-1 row-span-1">2P.M</div>
-              </div>
+                  <div className="grid grid-cols-6 grid-rows-2 mx-auto mt-12 mb-6">
+                    <div className="tableHead col-span-1 row-span-1">
+                      Lunes 18
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Martes 19
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Miércoles 20
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Jueves 21
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Viernes 22
+                    </div>
+                    <div className="tableHead col-span-1 row-span-1">
+                      Domingo 23
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">8P.M.</div>
+                    <div className="tbField col-span-1 row-span-1">8P.M.</div>
+                    <div className="tbField col-span-1 row-span-1">
+                      6P.M. y 8P.M.
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">
+                      6P.M. y 8P.M.
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">
+                      6P.M. y 8P.M.
+                    </div>
+                    <div className="tbField col-span-1 row-span-1">2P.M</div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>

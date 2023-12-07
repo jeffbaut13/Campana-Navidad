@@ -48,7 +48,7 @@ canvas,
   @apply w-full h-full m-0 p-0 box-content;
 }
 h1 {
-  @apply uppercase Tusker text-[--mainColorText] text-center text-5xl  leading-[1.1];
+  @apply uppercase Tusker text-[--mainColorText] text-center xl:text-5xl xs:text-4xl  leading-[1.1];
 }
 h2 {
   @apply uppercase AmenttiBold my-6 xl:text-sm tracking-[14px] xs:text-[10px];
@@ -96,7 +96,7 @@ svg {
   stroke-linejoin: round;
   stroke-width: 1px;
   stroke: var(--mainColorText) !important;
-  @apply text-white z-50 w-[20px] h-[20px] cursor-pointer absolute right-0 top-[-60px];
+  @apply text-white z-50 w-[20px] h-[20px] cursor-pointer absolute right-0 xl:top-[-60px] xs:top-[-40px];
 }
 .imagenEfecto {
   @apply w-full h-full text-white max-w-2xl flex flex-col items-start justify-center;
@@ -197,7 +197,7 @@ svg {
 .gradienteTransparente {
   @apply bg-gradient-to-b from-transparent to-black;
 }
-.gradienteArriba{
+.gradienteArriba {
   @apply bg-gradient-to-t from-transparent to-black;
 }
 .largo {

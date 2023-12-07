@@ -5,7 +5,7 @@ const MainButton = ({ titulo, HandleClick, cusClasses }) => {
     <button
       className={`${
         cusClasses ? cusClasses : ""
-      } custonBtn Amentti tracking-[15px]`}
+      } w-full custonBtn Amentti tracking-[7px]`}
       onClick={HandleClick}
     >
       {titulo}

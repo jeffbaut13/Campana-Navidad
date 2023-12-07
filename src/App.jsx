@@ -18,13 +18,13 @@ export default function App() {
   return (
     <Suspense fallback={null}>
       <Header isTablet={isTablet} isMobile={isMobile} />
-      <Inicio videoId="66Log7IODoE" isTablet={isTablet} isMobile={isMobile}/>
-      {isMobile || isTablet ? <ActividadesMobile/> : <Opcion1 />}
-      <Division />
-      <Carta isTablet={isTablet} isMobile={isMobile}/>
+      <Inicio videoId="66Log7IODoE" isTablet={isTablet} isMobile={isMobile} />
+      {isMobile || isTablet ? <ActividadesMobile /> : <Opcion1 />}
+      <Division isTablet={isTablet} isMobile={isMobile} />
+      <Carta isTablet={isTablet} isMobile={isMobile} />
       <Novena />
       <Gallery />
-      <Footer/>
+      <Footer />
     </Suspense>
   );
 }
