@@ -29,7 +29,9 @@ const Registro = ({ ejecutarVista }) => {
           Estamos en la plazoleta de la <br /> calle 85 con carrera 15 en Bogotá
         </span>
       </h2>
-      <BotonRegistro />
+      <div>
+        <BotonRegistro />
+      </div>
     </div>
   );
 };
