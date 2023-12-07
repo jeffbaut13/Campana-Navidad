@@ -9,7 +9,7 @@ const Inicio = ({ videoId, isTablet, isMobile }) => {
 
 
   const opts = {
-    height: !isMobile && !isTablet ? "600px" : "auto",
+    height: !isMobile && !isTablet ? "600px" : "40vh",
     width: !isMobile && !isTablet ? "1000px" : "100%",
     playerVars: {
       autoplay: 1,
