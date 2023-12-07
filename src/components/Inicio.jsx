@@ -57,7 +57,7 @@ const Inicio = ({ videoId, isTablet, isMobile }) => {
 
       <div className="w-full">
         <div className="w-full h-[50px] gradienteTransparente"></div>
-        <div className="flex-col justify-center text-center text-[#e2d599] bg-black ">
+        <div className="flex-col justify-center text-center text-[#e2d599] bg-black xs:px-3.5">
           <h2 className="text-[#e2d599] tracking-[7px] m-0 ">
             Sumérgete en la conmovedora historia de David,
             <br />

@@ -53,7 +53,7 @@ const Gallery = () => {
 
   return (
     <div className="w-full pt-28 bg-black" id="momentos">
-      <div className="flex-col text-center">
+      <div className="flex-col text-center xs:px-3.5">
         <h3 className="font-extrabold font-[tusker] text-5xl my-6 text-[#e2d599] tracking-[1.5px]">
           MOMENTOS DE ENTREGA
         </h3>

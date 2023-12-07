@@ -20,7 +20,7 @@ const Novena = () => {
   return (
     <div id="novena" className=" bnovena">
         <div className="w-full h-[50px] gradienteTransparente"></div>
-      <div className="flex flex-col h-full justify-between text-center">
+      <div className="flex flex-col h-full justify-between text-center xs:px-3.5">
         <p className=" pt-10 mb-6">
           Extiende la magia de entregar: Descarga nuestra novena especial y un
           cuento navideño para compartir el espíritu de entregar en familia

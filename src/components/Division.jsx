@@ -3,7 +3,7 @@ import Figure from "./Figure";
 
 const Division = () => {
   return (
-    <div className="division">
+    <div className="division xs:px-3.5">
       <div className="gradienteTransparente h-[4rem] translate-y-[-4rem]"></div>
       <div className="bg-black">
         <div className="clase">
@@ -49,7 +49,7 @@ const Division = () => {
                 ¡prográmate!
               </p>
             </div>
-            <div className="flexCenterC w-full">
+            <div className="flexCenterC w-full ">
               <div className="grid grid-cols-5 grid-rows-2 mx-auto mt-12 mb-6">
                 <div className="tableHead col-span-1 row-span-1">
                   Miércoles 6

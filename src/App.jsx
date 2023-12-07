@@ -21,7 +21,7 @@ export default function App() {
       <Inicio videoId="66Log7IODoE" isTablet={isTablet} isMobile={isMobile}/>
       {isMobile || isTablet ? <ActividadesMobile/> : <Opcion1 />}
       <Division />
-      <Carta />
+      <Carta isTablet={isTablet} isMobile={isMobile}/>
       <Novena />
       <Gallery />
       <Footer/>

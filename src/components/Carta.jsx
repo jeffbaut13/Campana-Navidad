@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { handleClick } from "../config/Anclas";
 
-const Carta = () => {
+const Carta = ({isTablet, isMobile}) => {
   const logScrollPercentage = () => {
     // Obtener la altura total de la página
     const totalHeight =
@@ -86,8 +86,8 @@ const Carta = () => {
     <div id="carta" className="largo relative">
 
       <div className="cajaimagenes">
-        <div className="absolute top-28 z-10 left-1/2 translate-x-[-50%] text-center">
-          <h3 className=" text-5xl mb-6 Tusker text-[--mainColorText]">
+        <div className="absolute top-28 xs:top-9 z-10 left-1/2 translate-x-[-50%] text-center">
+          <h3 className=" text-5xl xs:text-[25px] mb-6 xs:mb-96 Tusker text-[--mainColorText]">
             LA CARTA QUE CAMBIÓ NUESTRA FORMA DE VER LA NAVIDAD
           </h3>
           <p>
