@@ -254,7 +254,7 @@ svg {
   z-index: 9;
 }
 .bnovena {
-  @apply bg-[url('/imagenes/fondonovena.jpg')] bg-center bg-cover z-[70] relative w-full h-full;
+  @apply xl:bg-[url('/imagenes/fondonovena.jpg')] xs:bg-[url('/imagenes/novenamobile.webp')] bg-center bg-cover z-[70] relative w-full h-full;
 }
 .division {
   width: 100%;

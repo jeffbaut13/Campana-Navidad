@@ -36,7 +36,7 @@ const ActividadesMobile = () => {
   };
   console.log(openImg);
   return (
-    <div className={`z-10 w-full h-full relative`}>
+    <div className={`z-10 w-full h-full relative mb-[250px]`}>
       {openImg !== 0 && (
         <div className="galeria w-full flexCenterC h-full px-8">
           <span
@@ -104,10 +104,10 @@ const ActividadesMobile = () => {
       {openImg === 0 && (
         <div className="showAgendar galeria w-full h-full flex flex-col justify-start items-center ">
           <Figure
-            customclas={"w-full h-full"}
+            customclas={"w-full h-full "}
             imgSrc={"/imagenes/imagen-Render.jpg"}
           />
-          <h1 className="mt-6">
+          <h1 className="mt-6 xs:px-3.5">
             Descubre el encanto de entregar
             <br />
             alegría esta navidad
